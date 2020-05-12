@@ -36,8 +36,10 @@ public class AppCtx {
 		return new MemberPrinter();
 	}
 	
+
 	@Bean
 	public MemberListPrinter listPrinter() {
+		// 각파라미터에 해당하는 메서드를 호출해서 의존 객체를 주입.
 		return new MemberListPrinter(memberDao(), memberPrinter());
 	}
 	
