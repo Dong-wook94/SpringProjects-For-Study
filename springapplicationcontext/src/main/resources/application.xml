@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--나는 이 bean-package 부터 bean을 스캐닝을 해서 등록을 하겠다.-->
+    <context:component-scan base-package="me.dongwook.springapplicationcontext"/>
+
+    <!--아래는 굉장히 번거로운 방법-->
+    <!--    <bean id ="bookService"-->
+<!--          class="me.dongwook.springapplicationcontext.BookService">-->
+<!--        <property name="bookRepository" ref="bookRepository"></property>-->
+<!--        &lt;!&ndash;ref 뒤에는 다른 bean의 id가 들어와야됨&ndash;&gt;-->
+
+<!--    </bean>-->
+
+<!--    <bean id="bookRepository"-->
+<!--          class="me.dongwook.springapplicationcontext.BookRepository"/>-->
+
+
+</beans>
